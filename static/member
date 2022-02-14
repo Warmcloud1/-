@@ -1,0 +1,8 @@
+
+public class Main {
+	public static int a=1;
+	public static void main(String[] args) {
+		Main aa = new Main();
+		aa.a=33;
+		Main bb=new Main();
+		System.out.print(bb.a); //此時a=33;，static可比擬為類別的成員，非方法的成員
