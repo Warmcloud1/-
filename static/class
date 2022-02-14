@@ -1,0 +1,46 @@
+public class Main {
+//題目 https://leetcode.com/problems/two-sum/
+//開始時間 2022.02.14.08:30  
+	public static void main(String[] args) {
+		int[] arr1= {3,2,4};
+		int target=6;
+		//non-static
+		int[] check1=new int[2];
+		Main aa= new Main();
+		check1=aa.twoSum(arr1,target);	//重點
+		System.out.printf("%d,%d\n",check1[0],check1[1]);
+		//static
+		int[] check2=new int[2];
+		check2=twoSum2(arr1,target);   //重點	
+		System.out.printf("%d,%d",check2[0],check2[1]);
+
+	}
+	//non-static
+    public int[] twoSum(int[] nums, int target) {
+    	int[] ans=new int[2];
+        for(int ii=1;ii<nums.length;ii++){
+            for(int jj=0;jj<ii;jj++){
+                if(nums[ii]+nums[jj]==target) {
+                	ans[0]=jj;
+                	ans[1]=ii;
+                	break;
+                }
+            }
+        }
+        return ans;
+    }
+   //static
+    public static int[] twoSum2(int[] nums, int target) {
+    	int[] ans=new int[2];
+        for(int ii=1;ii<nums.length;ii++){
+            for(int jj=0;jj<ii;jj++){
+                if(nums[ii]+nums[jj]==target) {
+                	ans[0]=jj;
+                	ans[1]=ii;
+                	break;
+                }
+            }
+        }
+        return ans;
+    }
+}
