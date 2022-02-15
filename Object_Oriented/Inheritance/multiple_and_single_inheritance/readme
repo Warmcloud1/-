@@ -1,0 +1,10 @@
+java為單一繼承，C++好像能多重繼承?
+因多重繼承會報錯
+假設
+public class Cat extends Animal,Animal2{
+	public Cat() {
+		System.out.println("貓咪的建構子");
+	}
+}
+
+main檔執行Cat物件的Cat.eat 那該執行Animal.eat或Animal2.eat 這樣會有問題
