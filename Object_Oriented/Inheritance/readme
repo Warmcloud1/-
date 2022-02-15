@@ -1,6 +1,7 @@
 封裝等級
  
 1.private 2.package(default) 3.proteceted 4.public 
+private 不可繼承
 package、protected、public 可繼承 
                       | private | package | protected | public
 同一個類               |    O    |    O    |    O    |    O    |
