@@ -1,3 +1,5 @@
+//比較有無public
+//*****************************************************
 package second;
 
 public class A{
@@ -7,7 +9,7 @@ public class A{
   }
 }
 
-
+//*****************************************************
 package second;
 
 public class B {
@@ -16,7 +18,7 @@ public class B {
 		
 	}
 }
-
+//*****************************************************
 package first;
 
 import second.A; // 載入package    import package名稱.類別 
