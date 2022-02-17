@@ -1,5 +1,9 @@
-//繼承之父
+//繼承之父Object
 //為何Cat父類別沒有Object，卻有Object的方法，因為Java所有的類別沒有extends都預設繼承自Object
+
+
+
+//常見應用 toString
 
 public class Animal {
 	private String name;
@@ -14,6 +18,3 @@ public class Animal {
 	}
 
 }
-
-
-//常見應用 toString
