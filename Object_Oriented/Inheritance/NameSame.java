@@ -42,5 +42,4 @@ public class Cat extends Animal{
 		System.out.println(a+ "  "+ getA()); //print(100    100)。若getA()沒覆寫則呼叫父類的getA()=1，可用於呼叫父類的值，protected也可以辦到
         //
 	}
-	
 }
