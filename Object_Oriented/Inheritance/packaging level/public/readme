@@ -6,5 +6,5 @@ package、protected、public 可繼承
                       | private | package | protected | public
 同一個類               |    O    |    O    |    O    |    O    |
 同一個package          |         |    O    |    O    |    O    |
-不同packagec的非父類    |         |         |    O    |    O    |
+不同packagec的子類    |         |         |    O    |    O    |
 不同package的子類及父類 |         |         |         |    O    |
