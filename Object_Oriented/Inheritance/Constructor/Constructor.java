@@ -26,9 +26,9 @@ package Animal_test;
 
 public class Cat extends Animal{
 	public Cat() {
-    //super指的是當前操作父類的實體
-    //this指的是當前操作類的實體
-    super();//此行java會自動創建這行，可打可不打，但要執行在第一行，不然會報錯
+   		//super指的是當前操作父類的實體
+    		//this指的是當前操作類的實體
+   		super();//此行java會自動創建這行，可打可不打，但要執行在第一行，不然會報錯
 		System.out.println("貓咪的建構子");
 	}
 }
