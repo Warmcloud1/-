@@ -1,0 +1,8 @@
+//如果在定義方法成員時使用 "final"，表示該方法成員在無法被子類別重新定義（Override），例如：
+public class Ball { 
+    private double radius; 
+
+    public final double getRadius() { 
+        return radius; 
+    }  
+} 
