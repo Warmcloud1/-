@@ -1,0 +1,43 @@
+package Main_test;
+import java.util.Scanner;
+import Animal_test.*;
+import Shape.*;
+public class Main {
+	public static void main(String[] args) {
+		//shape
+		Square square=new Square(5);
+		square.area();
+		
+		Rectangle rect;
+		rect=square; //多型 正方形為長方形的一種，
+		square.test(); //子類擴充一個方法
+		//rect.test();擴增的無法抓到，會報錯
+		Rectangle rect2=new Square(5); //不會回溯覆寫，Override不會覆寫長方形的方法，依然是正方形(感覺不重要)
+        
+        Square square;
+        square=rect2 //會報錯，因長方形不為正方形的一種，但可以強制轉型，先跳過。
+		//應用
+		Shape[] shapeArr=new Shape[5];
+		for(int ii=0;ii<3;ii++) {
+			Scanner sc=new Scanner(System.in);
+			int opt=sc.nextInt();
+			switch(opt) {
+				case 1:
+					System.out.println("輸入一個半徑");
+					shapeArr[ii]=new Circle(sc.nextInt());
+					break;
+				case 2:
+					System.out.println("輸入一個長度一個寬度");
+					shapeArr[ii]=new Rectangle(sc.nextInt(),sc.nextInt());
+					break;
+				case 3:
+					System.out.println("輸入一個寬度");
+					shapeArr[ii]=new Square(sc.nextInt());
+					break;
+			}	
+		}
+		for(int ii=0;ii<3;ii++) {
+			System.out.println("面積為:"+shapeArr[ii].area()+"周長為"+shapeArr[ii].perimeter());
+		}
+	}
+}
