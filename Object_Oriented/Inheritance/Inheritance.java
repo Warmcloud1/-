@@ -1,5 +1,6 @@
 //比較有無繼承
 //****************************************************
+//main檔
 package first;
 import Animal_test.*;
 public class Main {
@@ -22,7 +23,7 @@ public class Cat {
 		System.out.println("咬");
 	}
 }
-//***************************************************
+//packagepackagepackagepackagepackagepackagepackage
 package Animal_test;
 public class Dog {
 	public void eat() {
@@ -30,7 +31,7 @@ public class Dog {
 	}
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//有繼承
+//轉換成有繼承
 package Animal_test;
 
 public class Animal {
@@ -38,11 +39,11 @@ public class Animal {
 		System.out.println("咬");
 	}
 }
-//***************************************************
+//packagepackagepackagepackagepackagepackagepackage
 package Animal_test;
-public class Cat extends Animal {
+public class Cat extends Animal { //子類 extends 父類
 }
-//***************************************************
+//packagepackagepackagepackagepackagepackagepackage
 package Animal_test;
-public class Dog extends Animal{
+public class Dog extends Animal{ //子類 extends 父類
 }
