@@ -8,7 +8,7 @@ import Shape.*;
 public class Main {
 	public static void main(String[] args) {
 		Cat cat=new Cat();
-		cat.printA();//printA Cat a=100;Animal a=1;	
+		cat.printA();
 		System.out.println(cat.toString());
 	}
 }
@@ -39,7 +39,7 @@ public class Cat extends Animal{
 		return a;
 	}
 	public void printA() {
-		System.out.println(a+ "  "+ getA()); //print(100    100)。若沒覆寫則呼叫父類的getA()=1，可用於呼叫父類的值，protected也可以辦到
+		System.out.println(a+ "  "+ getA()); //print(100    100)。若getA()沒覆寫則呼叫父類的getA()=1，可用於呼叫父類的值，protected也可以辦到
         //
 	}
 	
