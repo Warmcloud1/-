@@ -8,7 +8,7 @@ public class Main {
 		Square square=new Square(5);
 		square.area();
 		Rectangle rect;
-		rect=square; //多型 正方形為長方形的一種，  //宣告名稱大的(子類)可以兼容小的宣告名稱(父類) 小的宣告名稱可以new大的物件，但大的宣告名稱不可以new小的物件
+		rect=square; //多型 正方形為長方形的一種
 		square.test(); //子類擴充一個方法	
 		//rect.test();擴增的無法抓到，會報錯
 		Rectangle rect2=new Square(5); //不會回溯覆寫，Override不會覆寫長方形的方法，依然是正方形(感覺不重要)
