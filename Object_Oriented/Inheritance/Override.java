@@ -22,12 +22,15 @@ public class Animal {
 	public Cat Test2_c() {
 		return null;
 	}
+	protected Animal Test3() {
+		return null;
+	}
 }
 //_______________________________________________________________________________________________
 package Animal_test;
 
 public class Cat extends Animal{
-	//Override 用來覆寫方法 eat為常見方法，方法名稱及參數一樣就可作@Override，但封裝等級和參數一定要一樣嗎?
+	//Override 用來覆寫方法 eat為常見方法，方法名稱及參數一樣就可作@Override，但封裝等級和宣告名稱一定要一樣嗎?
 	@Override
 	public void eat() {
 		System.out.println("咬咬");
@@ -50,4 +53,8 @@ public class Cat extends Animal{
 	//public Animal Test2_c() {
 	//	return null;
 	//}
+	@Override
+	public Animal Test3() { //protected可以轉成public 因範圍擴大了，反之不行改為private 
+		return null;
+	}
 }
