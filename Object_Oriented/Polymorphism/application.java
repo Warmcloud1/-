@@ -14,7 +14,7 @@ public class Main {
 		Rectangle rect2=new Square(5); //不會回溯覆寫，Override不會覆寫長方形的方法，依然是正方形(感覺不重要)
         	Square square;
         	square=rect2 //會報錯，因長方形不為正方形的一種，但可以強制轉型，先跳過。
-//應用
+//應用 
 		Shape[] shapeArr=new Shape[5];
 		for(int ii=0;ii<3;ii++) {
 			Scanner sc=new Scanner(System.in);
@@ -40,18 +40,15 @@ public class Main {
 	}
 }
 //**********************************************************************
-package Shape;
+package  Shape;
 //Shape 類型
-public class Shape {
+public Abstract class Shape {
 	public Shape() {
-		
+	//沒抽象類別的話，Shape是不需要Area等方法，但其子類別需要，若不設置會找不到Shape的方法，	
 	}
-	public double area() {
-		return 0;
-	}
-	public double perimeter() {
-		return 0;
-	}
+	public Abstract double area();
+
+	public Abstract double perimeter();
 }
 //**********************************************************************
 //長方形
