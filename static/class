@@ -29,8 +29,12 @@ public class Main {
         }
         return ans;
     }
-   //static
-    public static int[] twoSum2(int[] nums, int target) {
+   //static 靜態類別裡不能存取分靜態的屬性和方法，因靜態是存取至類別上，而非靜態在物件上
+
+    public static int dd=3;
+    public static int[] twoSum2(int[] nums, int target,int c) {
+        c=dd;//OK 因為是靜態
+    	//int a=0;抱錯
     	int[] ans=new int[2];
         for(int ii=1;ii<nums.length;ii++){
             for(int jj=0;jj<ii;jj++){
