@@ -33,7 +33,7 @@ public class Cat extends Animal{
 		System.out.println("咬咬");
 	}
 	
-	//以下示範一點"宣告名稱"變化   宣告名稱大的(子類)可以兼容小的(父類)
+	//以下示範一點"宣告名稱"變化   宣告:動物 原宣告:貓 動物是貓嗎?是 OK
 	@Override 
 	public Animal Test() { //父類Animal、子類Animal可覆寫
 		return null;
