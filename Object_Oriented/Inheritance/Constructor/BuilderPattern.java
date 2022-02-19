@@ -10,7 +10,11 @@ public class Main {
 		t=builder.gen();
 		t.print();
 		//化簡
-		Test t2=new Test.Builder().setA(3).setB(2).setC(4).gen();//鏈式方法
+		Test t2=new Test.Builder()
+			.setA(3)
+			.setB(2)
+			.setC(4)
+			.gen();//鏈式方法
 		t2.print();
 	}
 }
