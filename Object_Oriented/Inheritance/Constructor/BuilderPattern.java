@@ -53,7 +53,7 @@ public class Test {
 		this.a=a;
 		this.b=b;
 	}
-	public Test (int a,int b,int c) {
+	private Test (int a,int b,int c) { //用Builder Pattern 避免使用建構子建構，改成private
 		this.a=a;
 		this.b=b;
 		this.c=c;
