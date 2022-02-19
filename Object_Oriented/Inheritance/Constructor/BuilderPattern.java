@@ -20,7 +20,7 @@ package Constructor;
 public class Test {
 	//以下為標準Builder Pattern 為了建構建構子，做一內部類別
 	
-	public static class Builder {
+	public static class Builder { //要有static，因為Test建構子未建構前無實體，而又要靠Builder建構建構子，所以要static
 		private int a;
 		private int b;
 		private int c;
