@@ -7,4 +7,4 @@ package、protected、public 可繼承
 同一個類               |    O    |    O    |    O    |    O    |
 同一個package          |         |    O    |    O    |    O    |
 不同packagec的子類    |         |         |    O    |    O    |
-不同package的子類及父類 |         |         |         |    O    |
+不同package的非子類 |         |         |         |    O    |
