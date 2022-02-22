@@ -18,10 +18,10 @@ public class TestA { //外部類別本來就為靜態不用加static
     public class InnerTestNonStatic { //非靜態內部類別
         private int c1; //用private外部類別也拿的到
         public InnerTestNonStatic() {
-            a1 = 3; //可以拿到外部類別的東西
+            a1 = 1; //可以拿到外部類別的東西
             c1=3;
-            TestA.this.a1=100; //等同a1=100 Test.this指的是Test的實體
-            this.c1=300; //等同c1=300 this只當前操作物體的實體
+            TestA.this.a1=1; //等同a1=100 Test.this指的是Test的實體
+            this.c1=3; //等同c1=300 this只當前操作物體的實體
 
         }
 
@@ -29,19 +29,19 @@ public class TestA { //外部類別本來就為靜態不用加static
 
     public static class InnerTestStatic { //enum跟interface也類似靜態同理  //靜態內部類別
 
-        private int aa=9;
+        private int e1=700;
 
         public InnerTestStatic() {
             TestA V=new TestA(); //用new方法存取外部類別的內容
-            V.a1 = 1;
+            V.a1 = 100;
         }
 
     }
     public void funcA(){
         InnerTestNonStatic C=new InnerTestNonStatic();
-        C.c1=30; //建立物件，存取到內部類別，可直接存取private資料
-        InnerTestStatic V=new InnerTestStatic();
-        V.aa=90;//建立物件，存取到內部類別
+        C.c1=30; //建立物件，存取到內部類別，可直接存取private資料  這裡最不符邏輯
+        InnerTestStatic E=new InnerTestStatic();
+        E.e1=70;//建立物件，存取到內部類別
     }
 
 
