@@ -58,7 +58,28 @@ public class StudentArray {
     public interface Comparactor1 { //放內部較好
         public int compare1(Student s1, Student s2);
     }
-
+    
+            //最一般
+    public void sort2(){
+        for (int ii = 0; ii < count-1; ii++) {
+            for (int n = 0; n < count-1-ii; n++) {
+                if(studentArr[n].getNumber()>studentArr[n+1].getNumber()){ //用
+                    swap(n,n+1);
+                }
+            }
+        }
+    }
+       //sort一般寫法
+    public void sort1(Comparactor1 c){
+        for (int ii = 0; ii < count-1; ii++) {
+            for (int n = 0; n < count-1-ii; n++) {
+                if(c.compare1(studentArr[n],studentArr[n+1])>0){
+                    swap(n,n+1);
+                }
+            }
+        }
+    }
+        
    //sort鏈式調用的寫法 會傳StudentArray
     public StudentArray sort(Comparactor1 c){
         StudentArray tmpArr=new StudentArray();
