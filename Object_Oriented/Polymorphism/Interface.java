@@ -1,4 +1,4 @@
-//經典應用
+//經典應用，原理為多型的原理
 public class TestMain {
 	public static void main(String[] args) {
 		//應用排序從大排到小跟從小排到大大部分都是一樣的只差在大小於
