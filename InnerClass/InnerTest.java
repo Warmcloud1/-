@@ -46,6 +46,6 @@ public class TestA { //外部類別本來就為靜態不用加static
 
 
     public interface Comparator{//要為public 因為Main要可以提取 才能用new物件 //靜態類別
-        public boolean compare(int a,int b);
+        public boolean compare(TestA a,TestA b); //寫成內部類別較好，而實現此Comparator的Class放在另外的資料夾，可增加彈性與
     }
 }
