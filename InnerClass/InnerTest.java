@@ -1,7 +1,7 @@
 public class IneerClassMain {
     public class InnerTest{
 
-        //TestAndInner.InnerTestNonStatic aaaa1=new TestAndInner().InnerTestNonStatic; //報錯 因為要先有外部實體才能創建內部類別
+        //TestA.InnerTestNonStatic aaaa1=new TestAndInner().InnerTestNonStatic; //報錯 因為要先有外部實體才能創建內部類別
         TestA.InnerTestNonStatic aa1=new TestA().new InnerTestNonStatic(); //正確
         TestA.InnerTestStatic aa2=new TestA.InnerTestStatic(); //enum跟Interface為靜態 同理也可這樣提取
 
