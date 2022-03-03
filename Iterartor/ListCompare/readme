@@ -1,0 +1,5 @@
+List基本4個操作為新增add、插入insert、刪除remove、取得get
+ArrayList實現add、get時較快
+LinkedList實現insert、remove較快
+ArrayList add、get時可直接找到位置跑1次即可，插入或刪除需要搬運後面的往前移，至多跑n次
+LinkedList 每一次皆需要add、get時需從頭跑到尾致多n次(在沒有Iterator的情況) ，找到insert、remove位置後一兩步就可以實現
