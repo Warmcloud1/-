@@ -5,4 +5,4 @@
 
 繼承(Inheritance):保持已有類的特性而構造新類的過程稱為繼承。class 子類名 extends 父類
 
-多型(Polymorphism):後面補充
+多型(Polymorphism):從字面上理解，多型就是一種型別表現出多種狀態。
