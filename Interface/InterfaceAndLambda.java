@@ -6,7 +6,7 @@ StudentArray arr=new StudentArray();
         sss1.setScore(10);//應用:可以改final裡面的變數，但不能改Student EX:s1=null X
 
 
-        StudentArray result2=arr.where(new StudentArray.Filter() { //沒有名字的類實現介面，匿名內部類別，編譯時會產生檔案
+        StudentArray result2=arr.where(new StudentArray.Filter() { //沒有名字的類實現介面，匿名內部類別，編譯時會產生檔案，效能較慢
             @Override
             public boolean filter(Student student1) {
                 return student1.getScore()>10;
