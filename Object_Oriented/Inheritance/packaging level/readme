@@ -2,7 +2,7 @@
  
 1.private 2.(default) 3.proteceted 4.public 
 private 不可繼承
-package、protected、public 可繼承 
+(default)、protected、public 可繼承 
                       | private | (default) | protected | public
 同一個類               |    O    |    O    |    O    |    O    |
 同一個package          |         |    O    |    O    |    O    |
