@@ -1,0 +1,45 @@
+public class Main {
+    public static void main(String[] args) {
+        Cat Tim=new Cat(1); //創建(、新建)貓這個類的實體(、實例、物件)
+        Tim.catTail();
+        
+        //而呼叫方法時傳遞的數值或物件稱之為「引數」，例如：
+        Tim.setSomething(10); // 10 是引數
+    }
+}
+
+_____________________________________________________________________________
+public class Cat extends animal implements InterfaceName { //cat為類別名稱 cat繼承animal 實現InterfaceName
+    //public/private/static/final...皆為存取修飾詞，又細分存取權限(access level modifier)、非存取權限(non access modifier)
+    //存取權限的修飾詞 private/(default)無修飾詞/protected/public 存取範圍由小到大排
+    private int tailNum;// 屬性
+    //非存取權限的修飾詞 /static靜態/final不可變動/abstract用於抽象 synchronized用於執行緒
+    private static int hp=9; //
+    public final int eyesNum=2; //
+
+    public Cat(int tailNum){ //貓的建構子要輸入參數貓尾巴的數量                貓尾巴的數量:int為基本資料型態 參數名稱
+        this.tailNum=tailNum;
+    }
+
+    public void catTail(){ //方法
+        System.out.println("This cat has "+tailNum+" tail");
+    }
+
+    @Override//覆寫
+    public void interfacetest() {
+    }
+
+    //您搞得清楚「參數」（Parameter）與引數（Argument）嗎？在定義方法時，可以定義「參數列」，例如
+    public void setSomething(int something) { //  void 傳回值型態:空值  something 稱之為參數
+
+    }
+}
+
+_____________________________________________________________________________
+public class animal {
+}
+
+_____________________________________________________________________________
+public interface InterfaceName {
+    public void interfacetest();
+}
