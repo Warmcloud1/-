@@ -1,0 +1,3 @@
+序列化(Serialization)
+Java自己提供寫檔案的格式
+使用ObjectOutputStream、ObjectInputStream來處理序列化
