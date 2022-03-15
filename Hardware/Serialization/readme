@@ -1,3 +1,7 @@
 序列化(Serialization)
 Java自己提供寫檔案的格式
 使用ObjectOutputStream、ObjectInputStream來處理序列化
+
+Class 加一個implements Serialization就可以序列化了
+
+用途可以將類別做成檔案，檔案可初始化玩家之類的
