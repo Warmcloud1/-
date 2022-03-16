@@ -5,4 +5,4 @@
 
 繼承(Inheritance):保持已有類的特性而構造新類的過程稱為繼承。class 子類名 extends 父類
 
-多型(Polymorphism):從字面上理解，多型就是一種型別表現出多種狀態。
+多型(Polymorphism):發揮繼承的特性，讓父類別的宣告可以指向子類別的物件。(在執行時能夠動態產生不同的子物件) 例如: Aninmal a = new dog();
