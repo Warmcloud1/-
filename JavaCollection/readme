@@ -1,4 +1,13 @@
 只要符合集合就是Collection 所以也就有Iterator
 主要分4種List(有序的集合)、quene(佇列)、dequene(反過來的quene)、set(無序的集合)
-Stack堆疊 後進先出(LIFO) 等同於先進後出 應用上一頁 呼叫函數
-Quene 先進先出(FIFO)念做First In First Out等同於後進後出  應用 排隊系統
+Stack堆疊 後進先出(LIFO) 等同於先進後出 應用:在上一頁、下一頁、返回，系統呼叫方法
+Quene 先進先出(FIFO)念做First In First Out等同於後進後出  應用 排隊系統、網路請求
+set 用雜湊的原理實現的類，但不是雜湊本身，因雜湊還能做到set做不到的事
+雜湊:將你的值轉換成一個位置(key hashing後得到 位置 
+
+
+
+
+
+HashMap雜湊 Key-Value，Key可找到Value但Value無法找到Key  進階:value也可以存陣列或方法，
+應用:查字典、1次就可以查找到 
