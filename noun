@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Cat Tim=new Cat(1); //創建(、新建)貓這個類的實體(、實例、物件)
+        Cat Tim=new Cat(1); //變數名稱Tim需告Cat，創建(、新建)貓這個類的實體(、實例、物件)
         Tim.catTail();
         
         //而呼叫方法時傳遞的數值或物件稱之為「引數」，例如：
