@@ -1,10 +1,13 @@
 型態類別有兩種:
+
 一.基本型態類別  1.short 2.int 3.long 4.float 5.double 6.boolean 7.byte 8.char  存放在記憶體中的stack 因為宣告的空間是固定的
 二.參考型態類別 Class類、String  存放在記憶體中的heap 宣告空間不固定
 Animal animal=new Animal();
 animal=記憶體中開頭的位置
 
 字串與一般參考型態類別不同
+Case1
+
   Scanner sc=new Scanner(System.in);
   String stra="a";
   String stra2="a";
@@ -13,6 +16,17 @@ animal=記憶體中開頭的位置
    System.out.println(stra==stra2); //true  //str1的位置與str2位置會相同，在"編譯"階段會存在StringPool
    System.out.println(stra==str1); //false  //str1因在"執行"階段存入，不會與stra的位置相同
   System.out.println(str1==str2); //false  
+
+
+Case 2
+        String[] dd=new String[5];
+        dd[0]="s";//編譯時期
+        String d1="s";  //編譯時期
+        String a1=new String("s"); //執行時期
+        String a2=new String("s"); //執行時期
+        System.out.println(d1==a1); //false執行時期不會放入字串池
+        System.out.println(a2==a1); //false執行時期不會放在字串池
+        System.out.println(dd[0]==d1);//true編譯可以等於編譯
 
 
 
