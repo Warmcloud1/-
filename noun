@@ -43,3 +43,8 @@ _____________________________________________________________________________
 public interface InterfaceName {
     public void interfacetest();
 }
+
+_____________________________________________________________________________
+宣告實體變數 創建物件:https://yubin551.gitbook.io/java-note/basic_java_programming/datatype/primitive_reference_difference
+
+
