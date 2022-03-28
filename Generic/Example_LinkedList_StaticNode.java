@@ -10,7 +10,7 @@ public class CLinkedList<T> {
         public boolean compare(T t1, T t2);
     }
 
-    private static class Node<T> { //此T會吃LinkedList的T
+    private static class Node<T> { //靜態類:此T會吃LinkedList的 private Node<T> root;這行的 T
 
         T data;
 
