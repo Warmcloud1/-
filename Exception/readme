@@ -9,3 +9,12 @@ Exception 用 try...catch...finally 很耗電腦資源，用多會跑比較慢
 引發: 系統自動引發(也是由throw寫)、由throw引發(寫在function裡)
 
 當設計工具或元件時，無法在設計時決定如何處理此錯誤。或使用者需不需要用到此錯誤，因此寫在設計函式裡有需要可拋出即可，
+
+
+如何處理錯誤:
+1.再將其throws丟出
+2.try
+3.catch
+4.finally
+
+catch中的例外類別可以用 | (or)
